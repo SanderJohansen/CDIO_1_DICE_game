@@ -6,7 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+        
+        //System.out.println("The player who get 40 points first, wins.");
+        
 //Enter players name for a more interactive game
         System.out.println("what is player 1's name?");
         String name1 = input.nextLine();
