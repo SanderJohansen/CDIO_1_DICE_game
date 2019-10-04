@@ -10,7 +10,7 @@ public class Main {
 //Enter players name for a more interactiv game
         System.out.println("what is player 1´s name?");
         String name1 = input.nextLine();
-        System.out.println("what is player 2´s names?");
+        System.out.println("what is player 2´s name?");
         String name2 = input.nextLine();
 
         // assigning of values, so the while function works probadly
