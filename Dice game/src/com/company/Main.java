@@ -92,8 +92,9 @@ System.out.println("The player who get to 40 points first, followed by hitting t
                 if (total1 >= 40) {
                     System.out.println(name1 + " has over 40 points!");
                     if (dice1 != dice2) {
-                        System.out.println(name1 + " just need to hit two of the same");
+                        System.out.println(name1 + " just needs to hit two of the same");
                     }
+                    //executes when winning condition, dice show same value, is met and ends loop while loop
                     if (dice1 == dice2) {
                         System.out.println(name1 + " has over 40 points and hit two identical");
                         System.out.println(name1 + " has won!");
