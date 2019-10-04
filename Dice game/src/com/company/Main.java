@@ -13,7 +13,7 @@ public class Main {
         System.out.println("what is player 2´s name?");
         String name2 = input.nextLine();
 
-        // assigning of values, so the while function works
+        // assigning of values, so the while function works probadly
         int t = 0;
         int s = 0;
         int i = 1;
