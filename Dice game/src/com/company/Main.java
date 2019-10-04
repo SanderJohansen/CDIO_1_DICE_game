@@ -8,9 +8,9 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
 //Enter players name for a more interactive game
-        System.out.println("what is player 1´s name?");
+        System.out.println("what is player 1's name?");
         String name1 = input.nextLine();
-        System.out.println("what is player 2´s name?");
+        System.out.println("what is player 2's name?");
         String name2 = input.nextLine();
 
         // assigning of values, so the while function works properly
@@ -30,7 +30,7 @@ public class Main {
 
             //player 1´s function
             while (i == 1) {
-                System.out.println("It¨s " + name1 + "´s turn");
+                System.out.println("It's " + name1 + "'s turn");
                 System.out.println("Enter anything to roll dice");
                 input.nextLine();
                 int max = 6;
@@ -58,7 +58,7 @@ public class Main {
                     t = t + 1;
                 }
 
-                System.out.println(name1 + " `s total amount of points is " + (total1));
+                System.out.println(name1 + " 's total amount of points is " + (total1));
                 System.out.println(".....................");
 
                 //alternative win condition
@@ -80,7 +80,7 @@ public class Main {
                 //roll again functions
                 if (dice1 == dice2) {
                     if (total1 <= 40) {
-                        System.out.println(name1 + "´s  dices hit the same number, " + name1 + " gets to roll again");
+                        System.out.println(name1 + "'s  dices hit the same number, " + name1 + " gets to roll again");
                         t = t + 1;
                     }
                 }
@@ -103,7 +103,7 @@ public class Main {
 
             //player 2´s function
             while (i == 2) {
-                System.out.println("It¨s " + name2 + "´s turn");
+                System.out.println("It's " + name2 + "'s turn");
                 System.out.println("Enter anything to roll dice");
                 input.nextLine();
                 int max = 6;
@@ -132,7 +132,7 @@ public class Main {
                     s = s + 1;
                 }
 
-                System.out.println(name2 + "´s total amount of points is " + (total2));
+                System.out.println(name2 + "'s total amount of points is " + (total2));
                 System.out.println("..............");
 
                 //alternative win condition
@@ -150,7 +150,7 @@ public class Main {
                 //roll again functions
                 if (dice3 == dice4) {
                     if (total2 <= 40)
-                    System.out.println(name2 + "´s  dices hit the same number, " + name2 + " gets to roll again");
+                    System.out.println(name2 + "'s  dices hit the same number, " + name2 + " gets to roll again");
                     s = s + 1;
 
                 }
@@ -175,8 +175,8 @@ public class Main {
         }
 
 
-            System.out.println(name1 + "´s score was " + total1 + " in " + t + " tries");
-            System.out.println(name2 + "´s score was " + total2 + " in " + s + " tries");
+            System.out.println(name1 + "'s score was " + total1 + " in " + t + " tries");
+            System.out.println(name2 + "'s score was " + total2 + " in " + s + " tries");
 
 
     }
