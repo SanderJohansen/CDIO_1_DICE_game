@@ -7,13 +7,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-//Enter players name for a more interactiv game
+//Enter players name for a more interactive game
         System.out.println("what is player 1´s name?");
         String name1 = input.nextLine();
         System.out.println("what is player 2´s name?");
         String name2 = input.nextLine();
 
-        // assigning of values, so the while function works probadly
+        // assigning of values, so the while function works properly
         int t = 0;
         int s = 0;
         int i = 1;
@@ -52,7 +52,7 @@ public class Main {
                     total1 = 0;
                     System.out.println("You lost your points this round cause both dices landed on 1");
                 }
-                //Adds the combined dices to your score and passes the turn on
+                //adds the combined dices to your score and passes the turn on
                 if (dice1 != dice2) {
                     i = i + 1;
                     t = t + 1;
@@ -61,7 +61,7 @@ public class Main {
                 System.out.println(name1 + " `s total amount of points is " + (total1));
                 System.out.println(".....................");
 
-                //Alternative win condition
+                //alternative win condition
                 if (dice_c1 == 12) {
                     System.out.println(name1 + " you hit two sixes, if you hit two sixes again you can win");
                     if (AWC1 == 1) {
@@ -77,7 +77,7 @@ public class Main {
                 }
 
 
-                //Roll again functions
+                //roll again functions
                 if (dice1 == dice2) {
                     if (total1 <= 40) {
                         System.out.println(name1 + "´s  dices hit the same number, " + name1 + " gets to roll again");
@@ -86,7 +86,7 @@ public class Main {
                 }
 
 
-                // Winning/ending function
+                //winning/ending function
                 if (total1 >= 40) {
                     System.out.println(name1 + " has over 40 points!");
                     if (dice1 != dice2) {
@@ -126,7 +126,7 @@ public class Main {
                     System.out.println("You lost your points this round cause both dices landed on 1");
                 }
 
-                //These lines adds the combination of numbers to the complete score
+                //these lines adds the combination of numbers to the complete score
                 if (dice3 != dice4) {
                     i = i - 1;
                     s = s + 1;
@@ -135,7 +135,7 @@ public class Main {
                 System.out.println(name2 + "´s total amount of points is " + (total2));
                 System.out.println("..............");
 
-                //Alternative win condition
+                //alternative win condition
                 if (dice_c2 == 12) {
                     System.out.println(name2 + " you hit two sixes, if you hit two sixes again you can win");
                     if (AWC2 == 1) {
@@ -147,7 +147,7 @@ public class Main {
                     AWC2 = 1;
                 }
 
-                //Roll again functions
+                //roll again functions
                 if (dice3 == dice4) {
                     if (total2 <= 40)
                     System.out.println(name2 + "´s  dices hit the same number, " + name2 + " gets to roll again");
@@ -156,7 +156,7 @@ public class Main {
                 }
 
 
-                // Winning/ending function
+                //winning/ending function
                 if (total2 >= 40) {
                     System.out.println(name2 + " has over 40 points!");
                     if (dice_c2 != 12) {
