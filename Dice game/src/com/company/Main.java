@@ -7,14 +7,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        //System.out.println("The player who get 40 points first, wins.");
-        
 //Enter players name for a more interactive game
         System.out.println("what is player 1's name?");
         String name1 = input.nextLine();
         System.out.println("what is player 2's name?");
         String name2 = input.nextLine();
-
+        
+System.out.println("The player who get to 40 points first, followed by hitting to of the same die, wins.");
+        
         // assigning of values, so the while function works properly
         int t = 0;
         int s = 0;
